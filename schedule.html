@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Schedule</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="relative bg-black text-white">
+  
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline class="fixed top-0 left-0 w-full h-full object-cover opacity-40 -z-10">
+    <source src="fc25backvideo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Navbar -->
+  <nav class="bg-gray-900 p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-blue-400">Summer Vibez Gaming Expo 2025</h1>
+    <ul class="flex gap-6">
+      <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
+      <li><a href="schedule.html" class="hover:text-blue-400">Schedule</a></li>
+      <li><a href="location.html" class="hover:text-blue-400">Location</a></li>
+      <li><a href="register.html" class="hover:text-blue-400">Register</a></li>
+    </ul>
+  </nav>
+
+  <!-- Schedule Section -->
+  <section class="p-10 text-center relative z-10">
+    <h2 class="text-4xl font-bold mb-10">🎮 Game Schedule</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- FIFA -->
+      <details class="bg-gray-900 bg-opacity-80 p-6 rounded-lg shadow-lg hover:shadow-blue-500/50 transition duration-300">
+        <summary class="cursor-pointer text-2xl font-bold text-blue-400">FIFA 25 ⚽</summary>
+        <img src="fc25back.jpeg" alt="FIFA 25" class="mt-4 w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition">
+        <div class="mt-4 text-left">
+          <p>🕙 10:00 AM - eSports Arena</p>
+          <p>🏆 Group Stages → Quarter Finals → Finals</p>
+        </div>
+      </details>
+
+      <!-- COD -->
+      <details class="bg-gray-900 bg-opacity-80 p-6 rounded-lg shadow-lg hover:shadow-purple-500/50 transition duration-300">
+        <summary class="cursor-pointer text-2xl font-bold text-purple-400">Call of Duty: Warzone 🎯</summary>
+        <img src="cod.jpeg" alt="COD Warzone" class="mt-4 w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition">
+        <div class="mt-4 text-left">
+          <p>🕦 11:30 AM - Battle Zone</p>
+          <p>🔥 Solo → Duo → Squad Battles</p>
+        </div>
+      </details>
+
+      <!-- Mortal Kombat -->
+      <details class="bg-gray-900 bg-opacity-80 p-6 rounded-lg shadow-lg hover:shadow-red-500/50 transition duration-300">
+        <summary class="cursor-pointer text-2xl font-bold text-red-400">Mortal Kombat 12 🥊</summary>
+        <img src="mk.jpeg" alt="Mortal Kombat 12" class="mt-4 w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition">
+        <div class="mt-4 text-left">
+          <p>🕐 1:00 PM - Fighting Stage</p>
+          <p>🥇 Best of 3 → Knockouts → Finals</p>
+        </div>
+      </details>
+
+      <!-- Gran Turismo -->
+      <details class="bg-gray-900 bg-opacity-80 p-6 rounded-lg shadow-lg hover:shadow-green-500/50 transition duration-300">
+        <summary class="cursor-pointer text-2xl font-bold text-green-400">Gran Turismo 8 🏎️</summary>
+        <img src="rtr.jpeg" alt="Gran Turismo 8" class="mt-4 w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition">
+        <div class="mt-4 text-left">
+          <p>🕝 2:30 PM - Racing Arena</p>
+          <p>🚗 Time Trials → Semi Finals → Championship</p>
+        </div>
+      </details>
+
+      <!-- Fortnite -->
+      <details class="bg-gray-900 bg-opacity-80 p-6 rounded-lg shadow-lg hover:shadow-yellow-500/50 transition duration-300">
+        <summary class="cursor-pointer text-2xl font-bold text-yellow-400">Fortnite 🔥</summary>
+        <img src="fortnite.jpeg" alt="Fortnite" class="mt-4 w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition">
+        <div class="mt-4 text-left">
+          <p>🕓 4:00 PM - Main Stage</p>
+          <p>⚡ 100 Players → Top 10 → Finals</p>
+        </div>
+      </details>
+
+      <!-- Last of Us -->
+      <details class="bg-gray-900 bg-opacity-80 p-6 rounded-lg shadow-lg hover:shadow-pink-500/50 transition duration-300">
+        <summary class="cursor-pointer text-2xl font-bold text-pink-400">The Last of Us: Multiplayer 🎬</summary>
+        <img src="The Last of Us, A Post-Apocalyptic Survival Game by Naughty Dog.jpeg" alt="The Last of Us Multiplayer" class="mt-4 w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition">
+        <div class="mt-4 text-left">
+          <p>🕕 6:00 PM - Story Mode Arena</p>
+          <p>🌍 Survivor Mode → Co-Op Missions → Finals</p>
+        </div>
+      </details>
+    </div>
+  </section>
+</body>
+</html>
