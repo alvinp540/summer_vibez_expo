@@ -1,15 +1,73 @@
-<section id="contact" class="min-h-screen py-20 bg-gray-100">
-  <div class="container mx-auto px-6">
-    <h2 class="text-4xl font-bold text-center mb-12">Register Now</h2>
-    <form class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow space-y-4">
-      <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-lg" required>
-      <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-lg" required>
-      <select class="w-full p-3 border rounded-lg" required>
-        <option value="">Select Ticket Type</option>
-        <option value="standard">Standard</option>
-        <option value="vip">VIP</option>
-      </select>
-      <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">Register</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Pricing | PlayStation Expo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white relative">
+
+  <!-- Background Video -->
+  <video autoplay muted loop class="fixed top-0 left-0 w-full h-full object-cover opacity-40 -z-10">
+    <source src="fc25backvideo.mp4" type="video/mp4">
+  </video>
+
+  <!-- Navbar -->
+ <nav class="bg-gray-900 p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-blue-400">Summer Vibez Gaming Expo 2025</h1>
+    <ul class="flex gap-6">
+      <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
+      <li><a href="schedule.html" class="hover:text-blue-400">Schedule</a></li>
+      <li><a href="location.html" class="hover:text-blue-400">Location</a></li>
+    
+      <li><a href="contact.html" class="hover:text-blue-400 ">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- Pricing Section -->
+  <section class="p-10 text-center">
+    <h2 class="text-4xl font-bold mb-10"> Pricing Plans</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+      <!-- Basic -->
+      <div class="bg-gray-900 bg-opacity-80 p-6 rounded-xl shadow-lg hover:scale-105 hover:shadow-blue-500/50 transition transform duration-300">
+        <h3 class="text-2xl font-bold text-blue-400">Basic</h3>
+        <p class="mt-2 text-lg">Access to Group Stages</p>
+        <p class="mt-4 text-3xl font-extrabold">500 KSH</p>
+        <button class="mt-6 px-6 py-2 bg-blue-500 hover:bg-blue-600 rounded-lg font-semibold">Choose Plan</button>
+      </div>
+
+      <!-- Pro -->
+      <div class="bg-gray-900 bg-opacity-80 p-6 rounded-xl shadow-lg hover:scale-105 hover:shadow-yellow-500/50 transition transform duration-300">
+        <h3 class="text-2xl font-bold text-yellow-400">Pro</h3>
+        <p class="mt-2 text-lg">Includes Group + Quarter Finals</p>
+        <p class="mt-4 text-3xl font-extrabold">2000 KSH</p>
+        <button class="mt-6 px-6 py-2 bg-yellow-500 hover:bg-yellow-600 rounded-lg font-semibold">Choose Plan</button>
+      </div>
+
+      <!-- Premium -->
+      <div class="bg-gray-900 bg-opacity-80 p-6 rounded-xl shadow-lg hover:scale-105 hover:shadow-red-500/50 transition transform duration-300">
+        <h3 class="text-2xl font-bold text-red-400">Premium</h3>
+        <p class="mt-2 text-lg">All Access + Finals + VIP Perks</p>
+        <p class="mt-4 text-3xl font-extrabold">5000 KSH</p>
+        <button class="mt-6 px-6 py-2 bg-red-500 hover:bg-red-600 rounded-lg font-semibold">Choose Plan</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="p-10 text-center">
+    <h2 class="text-4xl font-bold mb-8">📩 Contact Us</h2>
+    <form class="max-w-lg mx-auto bg-gray-900 bg-opacity-80 p-8 rounded-xl shadow-lg space-y-6">
+      <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg bg-gray-800 text-white focus:ring-2 focus:ring-blue-500">
+      <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg bg-gray-800 text-white focus:ring-2 focus:ring-blue-500">
+      <textarea placeholder="Your Message" rows="5" class="w-full p-3 rounded-lg bg-gray-800 text-white focus:ring-2 focus:ring-blue-500"></textarea>
+      <button type="submit" class="w-full px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-lg font-semibold">Send Message</button>
     </form>
-  </div>
-</section>
+  </section>
+
+</body>
+</html>
