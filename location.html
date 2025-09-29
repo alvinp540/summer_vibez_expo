@@ -5,19 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Event Location</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/9507aa749c.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-black text-white">
   <!-- Navbar -->
-  <nav class="bg-gray-900 p-4 flex justify-between items-center">
-    <h1 class="text-2xl font-bold text-blue-400">Summer Vibez Gaming Expo 2025</h1>
-    <ul class="flex gap-6">
-      <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
-      <li><a href="schedule.html" class="hover:text-blue-400">Schedule</a></li>
-    
-      <li><a href="location.html" class="hover:text-blue-400">Location</a></li>
-   <li><a href="contact.html" class="hover:text-blue-400 ">Contact</a></li>
-    </ul>
+  <nav class="bg-gray-900 border-gray-900 dark:bg-gray-900 dark:border-gray-700">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="index.html" 
+   class="flex items-center space-x-3 rtl:space-x-reverse 
+          text-gray-700 hover:text-blue-500 
+          transition-colors duration-300">
+          
+  <i class="fa-solid fa-ghost text-2xl"></i>
+  
+  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+    SummerVibez
+  </span>
+</a>
+
+     <ul>
+        <li><a href="index.html" class="hover:text-blue-400">Home</a></li>  
+     </ul>
+ <ul>
+  <li><a href="schedule.html" class="hover:text-blue-400">Schedule</a></li>
+</ul>
+ <ul> 
+  <li><a href="location.html" class="hover:text-blue-400">Location</a></li>
+</ul>
+ <ul>   
+  <li><a href="contact.html" class="hover:text-blue-400 ">Contact</a></li>
+</ul>
+ 
+       
+    </div>
   </nav>
+
 
   <section class="p-10 text-center">
     <h2 class="text-4xl font-bold mb-6">Event Location</h2>
@@ -26,5 +48,45 @@
       <iframe class="w-full h-96 rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18..." allowfullscreen></iframe>
     </div>
   </section>
+
+   <!-- Footer -->
+  <footer class="bg-gray-900 py-10 shadow-inner">
+      <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8 text-center md:text-left">
+          
+          <!-- Brand Info -->
+          <div>
+              <h3 class="text-2xl font-bold text-blue-400 mb-4">SummerVIBEZ</h3>
+              <p class="text-white">Experience the best gaming.</p>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+              <h4 class="font-semibold text-white mb-4 text-center">Quick Links</h4>
+              <ul class="space-y-2 text-center">
+                  <li><a href="index.html" class="text-white hover:text-blue-600">Home</a></li>
+                  <li><a href="schedule.html" class="text-white hover:text-blue-600">Schedule</a></li>
+                  <li><a href="location.html" class="text-white hover:text-blue-600">Location</a></li>
+                  <li><a href="contact.html" class="text-white hover:text-blue-600">Contact</a></li>
+              </ul>
+          </div>
+
+          <!-- Social Links -->
+          <div>
+              <h4 class="font-semibold text-white mb-4">Follow Us</h4>
+              <div class="flex justify-center md:justify-start space-x-4 text-gray-600">
+                  <a href="#" class="hover:text-blue-600"><i class="fab fa-facebook fa-lg"></i></a>
+                  <a href="#" class="hover:text-blue-600"><i class="fab fa-twitter fa-lg"></i></a>
+                  <a href="#" class="hover:text-blue-600"><i class="fab fa-instagram fa-lg"></i></a>
+                  <a href="#" class="hover:text-blue-600"><i class="fab fa-github fa-lg"></i></a>
+                  <a href="#" class="hover:text-blue-600"><i class="fab fa-linkedin fa-lg"></i></a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="text-center text-white mt-8">
+          &copy; 2025 SmVIBEZ. All rights reserved.
+      </div>
+  </footer>
 </body>
 </html>

@@ -5,55 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Event Schedule</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* Stacked background videos. Default video is visible unless a card is opened. */
-    .bg-videos video {
-      position: fixed;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
-      z-index: -9; /* sit behind content */
-      pointer-events: none;
-    }
-    /* default video shown when no card-specific video is visible */
-    .bg-videos video.default {
-      opacity: 1;
-      visibility: visible;
-      z-index: -10;
-    }
-
-    /* Use :has() on body to detect an open details descendant and show matching video.
-       Note: :has() requires a modern browser (Chrome 105+, Safari 15.4+, Firefox 115+).
-       This keeps the implementation JavaScript-free. */
-    body:has(details[data-target="fifa"]:open) .bg-videos video[data-for="fifa"],
-    body:has(details[data-target="cod"]:open) .bg-videos video[data-for="cod"],
-    body:has(details[data-target="mk"]:open) .bg-videos video[data-for="mk"],
-    body:has(details[data-target="rtr"]:open) .bg-videos video[data-for="rtr"],
-    body:has(details[data-target="fortnite"]:open) .bg-videos video[data-for="fortnite"],
-    body:has(details[data-target="lastofus"]:open) .bg-videos video[data-for="lastofus"] {
-      opacity: 1;
-      visibility: visible;
-    }
-  </style>
+   <script src="https://kit.fontawesome.com/9507aa749c.js" crossorigin="anonymous"></script>
 </head>
 <body class="relative bg-black text-white">
   
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline class="fixed top-0 left-0 w-full h-full object-cover opacity-40 -z-10">
+    <source src="fc25backvideo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+ <!-- Navbar -->
+  <nav class="bg-gray-900 border-gray-900 dark:bg-gray-900 dark:border-gray-700">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="index.html" 
+   class="flex items-center space-x-3 rtl:space-x-reverse 
+          text-gray-700 hover:text-blue-500 
+          transition-colors duration-300">
+          
+  <i class="fa-solid fa-ghost text-2xl"></i>
+  
+  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+    SummerVibez
+  </span>
+</a>
 
-  <!-- Navbar -->
-  <nav class="bg-gray-900 p-4 flex justify-between items-center">
-    <h1 class="text-2xl font-bold text-blue-400">Summer Vibez Gaming Expo 2025</h1>
-    <ul class="flex gap-6">
-      <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
-      <li><a href="schedule.html" class="hover:text-blue-400">Schedule</a></li>
-      <li><a href="location.html" class="hover:text-blue-400">Location</a></li>
-
-      <li><a href="contact.html" class="hover:text-blue-400 ">Contact</a></li>
-    </ul>
+     <ul>
+        <li><a href="index.html" class="hover:text-blue-400">Home</a></li>  
+     </ul>
+ <ul>
+  <li><a href="schedule.html" class="hover:text-blue-400">Schedule</a></li>
+</ul>
+ <ul> 
+  <li><a href="location.html" class="hover:text-blue-400">Location</a></li>
+</ul>
+ <ul>   
+  <li><a href="contact.html" class="hover:text-blue-400 ">Contact</a></li>
+</ul>
+ 
+       
+    </div>
   </nav>
+
 
   <!-- Schedule Section -->
   <section class="p-10 text-center relative z-10">
@@ -61,7 +53,7 @@
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
       <!-- FIFA -->
-      <details class="bg-gray-900 bg-opacity-80 p-6 rounded-lg shadow-lg hover:shadow-blue-500/50 transition duration-300" data-target="fifa">
+      <details class="bg-gray-900 bg-opacity-80 p-6 rounded-lg shadow-lg hover:shadow-blue-500/50 transition duration-300">
         <summary class="cursor-pointer text-2xl font-bold text-blue-400">FIFA 25 </summary>
         <img src="fc25back.jpeg" alt="FIFA 25" class="mt-4 w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition">
         <div class="mt-4 text-left">
@@ -71,7 +63,7 @@
       </details>
 
       <!-- COD -->
-      <details class="bg-gray-900 bg-opacity-80 p-6 rounded-lg shadow-lg hover:shadow-purple-500/50 transition duration-300" data-target="cod">
+      <details class="bg-gray-900 bg-opacity-80 p-6 rounded-lg shadow-lg hover:shadow-purple-500/50 transition duration-300">
         <summary class="cursor-pointer text-2xl font-bold text-purple-400">Call of Duty: Warzone </summary>
         <img src="cod.jpeg" alt="COD Warzone" class="mt-4 w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition">
         <div class="mt-4 text-left">
@@ -81,7 +73,7 @@
       </details>
 
       <!-- Mortal Kombat -->
-      <details class="bg-gray-900 bg-opacity-80 p-6 rounded-lg shadow-lg hover:shadow-red-500/50 transition duration-300" data-target="mk">
+      <details class="bg-gray-900 bg-opacity-80 p-6 rounded-lg shadow-lg hover:shadow-red-500/50 transition duration-300">
         <summary class="cursor-pointer text-2xl font-bold text-red-400">Mortal Kombat 12 </summary>
         <img src="mk.jpeg" alt="Mortal Kombat 12" class="mt-4 w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition">
         <div class="mt-4 text-left">
@@ -91,7 +83,7 @@
       </details>
 
       <!-- Gran Turismo -->
-      <details class="bg-gray-900 bg-opacity-80 p-6 rounded-lg shadow-lg hover:shadow-green-500/50 transition duration-300" data-target="rtr">
+      <details class="bg-gray-900 bg-opacity-80 p-6 rounded-lg shadow-lg hover:shadow-green-500/50 transition duration-300">
         <summary class="cursor-pointer text-2xl font-bold text-green-400">Gran Turismo 8 </summary>
         <img src="rtr.jpeg" alt="Gran Turismo 8" class="mt-4 w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition">
         <div class="mt-4 text-left">
@@ -101,7 +93,7 @@
       </details>
 
       <!-- Fortnite -->
-      <details class="bg-gray-900 bg-opacity-80 p-6 rounded-lg shadow-lg hover:shadow-yellow-500/50 transition duration-300" data-target="fortnite">
+      <details class="bg-gray-900 bg-opacity-80 p-6 rounded-lg shadow-lg hover:shadow-yellow-500/50 transition duration-300">
         <summary class="cursor-pointer text-2xl font-bold text-yellow-400">Fortnite </summary>
         <img src="fortnite.jpeg" alt="Fortnite" class="mt-4 w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition">
         <div class="mt-4 text-left">
@@ -111,7 +103,7 @@
       </details>
 
       <!-- Last of Us -->
-      <details class="bg-gray-900 bg-opacity-80 p-6 rounded-lg shadow-lg hover:shadow-pink-500/50 transition duration-300" data-target="lastofus">
+      <details class="bg-gray-900 bg-opacity-80 p-6 rounded-lg shadow-lg hover:shadow-pink-500/50 transition duration-300">
         <summary class="cursor-pointer text-2xl font-bold text-pink-400">The Last of Us: Multiplayer </summary>
         <img src="The Last of Us, A Post-Apocalyptic Survival Game by Naughty Dog.jpeg" alt="The Last of Us Multiplayer" class="mt-4 w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition">
         <div class="mt-4 text-left">
@@ -122,33 +114,44 @@
     </div>
   </section>
 
-  <!-- Stacked background videos (placed after the content so details[open] ~ selector works) -->
-  <div class="bg-videos">
-    <!-- default video (visible when no card is open) -->
-    <video class="default" autoplay muted loop playsinline preload="auto">
-      <source src="fc25backvideo.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+     <!-- Footer -->
+  <footer class="bg-gray-900 py-10 shadow-inner">
+      <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8 text-center md:text-left">
+          
+          <!-- Brand Info -->
+          <div>
+              <h3 class="text-2xl font-bold text-blue-400 mb-4">SummerVIBEZ</h3>
+              <p class="text-white">Experience the best gaming.</p>
+          </div>
 
-    <!-- card-specific videos (these will become visible when the matching details is opened) -->
-    <video data-for="fifa" autoplay muted loop playsinline preload="none">
-      <source src="fc25backvideo.mp4" type="video/mp4">
-    </video>
-    <video data-for="cod" autoplay muted loop playsinline preload="none">
-      <source src="cod_video.mp4" type="video/mp4">
-    </video>
-    <video data-for="mk" autoplay muted loop playsinline preload="none">
-      <source src="mk_video.mp4" type="video/mp4">
-    </video>
-    <video data-for="rtr" autoplay muted loop playsinline preload="none">
-      <source src="rtr_video.mp4" type="video/mp4">
-    </video>
-    <video data-for="fortnite" autoplay muted loop playsinline preload="none">
-      <source src="fortnite_video.mp4" type="video/mp4">
-    </video>
-    <video data-for="lastofus" autoplay muted loop playsinline preload="none">
-      <source src="lastofus_video.mp4" type="video/mp4">
-    </video>
-  </div>
+          <!-- Quick Links -->
+          <div>
+              <h4 class="font-semibold text-white mb-4 text-center">Quick Links</h4>
+              <ul class="space-y-2 text-center">
+                  <li><a href="index.html" class="text-white hover:text-blue-600">Home</a></li>
+                  <li><a href="schedule.html" class="text-white hover:text-blue-600">Schedule</a></li>
+                  <li><a href="location.html" class="text-white hover:text-blue-600">Location</a></li>
+                  <li><a href="contact.html" class="text-white hover:text-blue-600">Contact</a></li>
+              </ul>
+          </div>
+
+          <!-- Social Links -->
+          <div>
+              <h4 class="font-semibold text-white mb-4">Follow Us</h4>
+              <div class="flex justify-center md:justify-start space-x-4 text-gray-600">
+                  <a href="#" class="hover:text-blue-600"><i class="fab fa-facebook fa-lg"></i></a>
+                  <a href="#" class="hover:text-blue-600"><i class="fab fa-twitter fa-lg"></i></a>
+                  <a href="#" class="hover:text-blue-600"><i class="fab fa-instagram fa-lg"></i></a>
+                  <a href="#" class="hover:text-blue-600"><i class="fab fa-github fa-lg"></i></a>
+                  <a href="#" class="hover:text-blue-600"><i class="fab fa-linkedin fa-lg"></i></a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="text-center text-white mt-8">
+          &copy; 2025 SmVIBEZ. All rights reserved.
+      </div>
+  </footer>
 </body>
 </html>
